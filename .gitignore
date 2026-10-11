@@ -1,0 +1,16 @@
+# secrets
+.env
+
+# local-only material (not published)
+docs/
+eval/
+examples/
+data/
+
+# python / tooling
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+.DS_Store
