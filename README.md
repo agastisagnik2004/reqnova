@@ -1,4 +1,4 @@
-<p align="center"><img src="frontend/assets/reqnova-logo.png" alt="Reqnova - AI for Requirements" width="300" /></p>
+<p align="center"><img src="frontend/assets/reqnova-logo.gif" alt="Reqnova - AI for Requirements" width="300" /></p>
 
 # Reqnova: AI for Requirements
 
