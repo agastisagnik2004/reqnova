@@ -7,13 +7,16 @@ there is no per-user separation.
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import threading
 import time
 import uuid
 from pathlib import Path
 
-DB_PATH = Path(__file__).resolve().parent.parent / "data" / "history.db"
+# Vercel's filesystem is read-only except /tmp (ephemeral, per instance).
+DB_PATH = (Path("/tmp") if os.environ.get("VERCEL")
+           else Path(__file__).resolve().parent.parent / "data") / "history.db"
 _lock = threading.Lock()
 
 
